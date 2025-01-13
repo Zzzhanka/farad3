@@ -12,14 +12,19 @@
         <nav>
             <div class="logo">
                 <img src="images/logo.png" alt="Логотип FARADAY ENERGO">
+                <span>FARADAY ENERGO</span>
+            </div>
+            <div class="burger" onclick="toggleMenu()">
+                <span id="burger-icon">&#9776;</span> <!-- Три полоски -->
+                <span id="close-icon">&#10006;</span> <!-- Крестик -->
             </div>
             <ul class="nav-links">
-                <li><a href="#about">О компании</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#team">Наша команда</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-                <li><a href="#vacancies">Вакансии</a></li>
+                <li><a href="#about" onclick="closeMenu()">О компании</a></li>
+                <li><a href="#portfolio" onclick="closeMenu()">Портфолио</a></li>
+                <li><a href="#services" onclick="closeMenu()">Услуги</a></li>
+                <li><a href="#team" onclick="closeMenu()">Наша команда</a></li>
+                <li><a href="#contacts" onclick="closeMenu()">Контакты</a></li>
+                <li><a href="#vacancies" onclick="closeMenu()">Вакансии</a></li>
             </ul>
         </nav>
     </header>
@@ -38,11 +43,11 @@
     <section id="services" class="services">
         <h2>Наши услуги и цены</h2>
         <div class="service-list">
-            <div class="service-item">
+            <div class="service-item" style="background-color: #f0f0f0;">
                 <h3>Строительство объектов</h3>
                 <p>Выполняем строительство промышленных объектов любой сложности.</p>
             </div>
-            <div class="service-item">
+            <div class="service-item" style="background-color: #e0e0e0;">
                 <h3>Монтаж оборудования</h3>
                 <p>Производим монтаж промышленного оборудования с гарантией качества.</p>
             </div>
@@ -83,6 +88,53 @@
         </div>
     </section>
     
+    <section id="team" class="team">
+        <h2>Наша команда</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="images/team1.jpg" alt="Имя Фамилия">
+                <h3>Имя Фамилия</h3>
+                <p>Генеральный директор</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team2.jpg" alt="Имя Фамилия">
+                <h3>Имя Фамилия</h3>
+                <p>Руководитель проектов</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team3.jpg" alt="Имя Фамилия">
+                <h3>Имя Фамилия</h3>
+                <p>Инженер-электрик</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team4.jpg" alt="Имя Фамилия">
+                <h3>Имя Фамилия</h3>
+                <p>Менеджер по закупкам</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vacancies" class="vacancies">
+        <h2>Вакансии</h2>
+        <div class="vacancy-list">
+            <div class="vacancy-item">
+                <h3>Инженер-электрик</h3>
+                <p>Обязанности: проектирование и монтаж электрических систем.</p>
+                <button class="btn">Отправить резюме</button>
+            </div>
+            <div class="vacancy-item">
+                <h3>Проектировщик</h3>
+                <p>Обязанности: разработка проектной документации для строительных объектов.</p>
+                <button class="btn">Отправить резюме</button>
+            </div>
+            <div class="vacancy-item">
+                <h3>Менеджер по продажам</h3>
+                <p>Обязанности: работа с клиентами и партнерами, заключение контрактов.</p>
+                <button class="btn">Отправить резюме</button>
+            </div>
+        </div>
+    </section>
+
     <section id="contacts" class="contacts">
         <h2>Связаться с нами</h2>
         <form action="#" method="post">
